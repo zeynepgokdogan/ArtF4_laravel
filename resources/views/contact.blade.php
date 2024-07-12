@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="tr">
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
@@ -7,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İletişim</title>
     <link rel="icon" type="image/png" href="/images/icon.jpg">
-    <link rel="stylesheet" href="../styles.css">
+    <link href="/css/styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="../script.js"></script>
+    <script src="/js/script.js"></script>
 </head>
 
 <body>
@@ -20,43 +19,45 @@
 
     <!-- OTHERS-->
     <div class="contact_container">
-
         <div class="contact_1">
-            <div>
-                <h1>Bir fikriniz mi var?</h1>
-                <h1>Bugün başlayın.</h1>
-                <h2>Fikirlerinizi önemsiyoruz ve bir an önce hayata geçirmeniz için gerekli tüm profesyonel desteği
-                    sağlıyoruz.</h2>
-            </div>
-            <div class="">
-                <form action="#" method="POST">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="first-name">Adınız-Soyadınız</label>
-                                <input type="text" id="first-name" name="first-name" required autocomplete="name">
+            <div class="contact_1_inside">
+                <div>
+                    <h1>Bir fikriniz mi var?</h1>
+                    <h1>Bugün başlayın.</h1>
+                    <h2>Fikirlerinizi önemsiyoruz ve bir an önce hayata geçirmeniz için gerekli tüm profesyonel desteği
+                        sağlıyoruz.</h2>
+                </div>
+                <div class="">
+                    <form action="#" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="first-name">Adınız-Soyadınız</label>
+                                    <input type="text" id="first-name" name="first-name" required autocomplete="name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="phone">Telefon Numaranız</label>
+                                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                        required>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="phone">Telefon Numaranız</label>
-                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="email">E-posta Adresiniz</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mesajınız</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Gönder</button>
-                    </div>
-                </form>
+                        <div class="form-group">
+                            <label for="email">E-posta Adresiniz</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Gönder</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -67,7 +68,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-    
+
     <!-- FOOTER -->
     @include('includes.footer')
 

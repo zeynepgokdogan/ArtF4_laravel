@@ -10,9 +10,8 @@
         integrity="sha512-yk+gzNp5/7la4fB5vXyGR+L2tPfa/MzD9jtVqFBl/JY9Pdo4xg9ghmhoEorx6zz2ejOBpFdKPrf+1ak7um8sxQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/png" href="/images/icon.jpg">
-    <link href="{{ asset('styles.css') }}" rel="stylesheet">
-
-    <script src="../script.js"></script>
+    <link href="/css/styles.css" rel="stylesheet">
+    <script src="/js/script.js"></script>
 </head>
 
 
@@ -41,18 +40,18 @@
                     atölyesidir. Kasım 2017 yılında Gaziantep Teknopark'ta kurulan atölyemiz; yazılım, tasarım ve
                     elektronik
                     alanlarında
-                    yaratıcı ve akılcı çözümler üretiyor.</h4>
+                    yaratıcı ve akılcı çözümler üretiyor.</h2>
             </div>
         </div>
 
-        <h4>Neler Yapıyoruz? </h3>
+        <h4>Neler Yapıyoruz? </h4>
             <div class="homepage_3">
                 <div class="services">
                     <div class="services_inside">
                         <div class="icon-container">
                             <img src="/images/yazilim.svg" alt="Yazılım İkon">
                         </div>
-                        <h4>YAZILIM ATÖLYESİ</h1>
+                        <h4>YAZILIM ATÖLYESİ</h4>
                             <h2>işi ve kurumlara özel yazılımlar, sektörel otomasyon çözümleri, B2B,</h2>
                     </div>
 

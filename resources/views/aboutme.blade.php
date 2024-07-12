@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakkımızda</title>
     <link rel="icon" type="image/png" href="/images/icon.jpg">
-    <link rel="stylesheet" href="../styles.css">
-    <script src="../script.js"></script>
+    <link href="/css/styles.css" rel="stylesheet">
+    <script src="/js/script.js"></script>
 </head>
 
 <body>

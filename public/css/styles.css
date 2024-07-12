@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     color: rgb(0, 0, 0);
@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     color: rgb(0, 0, 0);
@@ -25,7 +25,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     color: rgb(68, 68, 68);
@@ -34,7 +34,7 @@ h3 {
 }
 
 h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 500;
     color: rgb(68, 68, 68);
@@ -50,10 +50,6 @@ h5 {
     font-size: 25px;
     border-radius: 10px;
 }
-
-
-
-
 
 /* NAVBAR */
 .navbar {
@@ -100,7 +96,7 @@ h5 {
     text-align: center;
     padding: 20px 16px;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     color: #333;
@@ -133,7 +129,7 @@ h5 {
         top: 60px;
         left: 0;
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-style: normal;
         font-weight: 400;
         color: rgb(230, 49, 77);
@@ -159,23 +155,17 @@ h5 {
 
     .navbar-links li a:hover {
         color: black;
-
     }
 
     .navbar-logo img {
         max-width: 200px;
         max-height: auto;
-
     }
-
 }
-
-
-
 
 /* FOOTER */
 footer {
-    background-image: url('/images/footer_bg.jpg');
+    background-image: url("/images/footer_bg.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -206,7 +196,7 @@ footer {
 }
 
 .footer_text_1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     color: rgb(51, 51, 51);
@@ -218,7 +208,7 @@ footer {
 }
 
 .footer_text_2 a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     color: rgb(51, 51, 51);
@@ -244,9 +234,8 @@ footer {
     font-size: 25px;
 }
 
-
 .footer_links li a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     color: rgb(51, 51, 51);
@@ -277,7 +266,6 @@ footer {
     color: rgb(51, 51, 51);
 }
 
-
 .social_button:hover {
     margin: 0 5px;
     text-decoration: none;
@@ -291,7 +279,7 @@ footer {
 }
 
 .social_button span {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     color: rgb(51, 51, 51);
@@ -424,8 +412,6 @@ footer {
     }
 }
 
-
-
 /* HOME PAGE */
 #button_hp1,
 #button_hp2 {
@@ -455,7 +441,7 @@ footer {
 .homepage_1 {
     width: auto;
     height: 600px;
-    background-image: url('/images/homepage_bg.png');
+    background-image: url("/images/homepage_bg.png");
     background-size: cover;
     background-position: center;
     margin-bottom: 100px;
@@ -505,38 +491,29 @@ footer {
     }
 }
 
-
 /* SERVICES PAGE */
 .services_container {
-    width: 70%;
+    width: 90%; /* Genişliği artırıldı */
     margin: 0 auto;
     margin-bottom: 100px;
 }
 
-
 .services_1 {
     border-radius: 10px;
-    justify-items: center;
-    align-items: center;
     text-align: center;
     padding: 30px;
     box-sizing: border-box;
+    margin-bottom: 50px; /* Alt boşluk eklendi */
 }
-
 
 .services {
     background-color: #f8f8f8;
-    width: 100%;
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px; /* Grid boşluğu artırıldı */
     padding: 20px;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .services_inside {
@@ -545,13 +522,12 @@ footer {
     border-radius: 10px;
     box-sizing: border-box;
     text-align: center;
-    position: relative;
 }
 
 .icon-container {
-    position: relative;
     width: 80px;
     height: 80px;
+    margin: 0 auto; /* İkonların ortalanması sağlandı */
     margin-bottom: 10px;
 }
 
@@ -560,20 +536,14 @@ footer {
     height: auto;
 }
 
-
 @media (max-width: 768px) {
     .services_container {
-        width: 90%;
-        z-index: -1;
+        width: 100%; /* Mobilde tam genişlik sağlandı */
+        padding: 0 10px; /* Yan boşluklar azaltıldı */
     }
 
     .services {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-    }
-
-    .services_inside {
-        padding: 15px;
     }
 
     .icon-container {
@@ -583,33 +553,11 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .services_container {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .services_1 {
-        padding: 20px;
-    }
-
-    .services_inside {
-        padding: 10px;
-    }
-
     .icon-container {
         width: 50px;
         height: 50px;
     }
-
-    .icon-container img {
-        width: 100%;
-    }
 }
-
-
-
-
-
 /*ABOUT ME PAGE*/
 .aboutme_container {
     width: 70%;
@@ -619,7 +567,7 @@ footer {
 .aboutme_1 {
     width: auto;
     height: 400px;
-    background-image: url('/images/about_me_bg.png');
+    background-image: url("/images/about_me_bg.png");
     background-size: cover;
     background-position: center;
     margin-bottom: 50px;
@@ -634,7 +582,6 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-
 }
 
 .aboutme_3 {
@@ -656,7 +603,7 @@ footer {
     cursor: pointer;
     margin: 10px 0;
     border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     color: rgb(255, 255, 255);
@@ -717,9 +664,6 @@ footer {
     }
 }
 
-
-
-
 /* PROJECTS PAGE*/
 
 .projects_container {
@@ -736,7 +680,6 @@ footer {
     border-radius: 10px;
     padding: 10px;
     background-color: white;
-
 }
 
 .projects_inside img {
@@ -806,7 +749,6 @@ footer {
 
     .projects_inside {
         height: 100px;
-
     }
 }
 
@@ -829,7 +771,6 @@ footer {
         height: 80px;
     }
 }
-
 
 /* CONTACT PAGE*/
 .contact_container {
@@ -864,7 +805,8 @@ footer {
 }
 
 .contact_1_inside {
-    width: 50%;
+    display: flex;
+    flex-direction: row;
     box-sizing: border-box;
     padding: 20px;
     background-color: white;
@@ -920,10 +862,9 @@ footer {
     background-color: #4cae4c;
 }
 
-
 /* Media Queries */
 @media (max-width: 768px) {
-    .contact_1 {
+    .contact_1_inside {
         flex-direction: column;
         margin-bottom: 20px;
     }
