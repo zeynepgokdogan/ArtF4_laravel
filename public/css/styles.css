@@ -446,8 +446,7 @@ footer {
     background-position: center;
     margin-bottom: 100px;
     position: relative;
-    z-index: -1;
-    /* bunu yapınca tooglebar en üstte kaldı bunu pamdan önce arkada kalıyodu*/
+    /* Z-İNDEX= -1 bunu yapınca tooglebar en üstte kaldı bunu pamdan önce arkada kalıyodu*/
 }
 
 .homepage_1_inside {
@@ -465,7 +464,7 @@ footer {
     position: absolute;
     /*homepage1 omepage 2 insidein altına gelmsi için*/
     top: 250px;
-    z-index: -1;
+    /*z-index: -1;*/
 }
 
 #homepage_2 {
@@ -490,6 +489,8 @@ footer {
         top: 0%;
     }
 }
+
+
 
 /* SERVICES PAGE */
 .services_container {
@@ -722,7 +723,7 @@ footer {
 /* Media Queries */
 @media (max-width: 768px) {
     .projects_container {
-        width: 870%;
+        width: 70%;
     }
 
     .projects_1,

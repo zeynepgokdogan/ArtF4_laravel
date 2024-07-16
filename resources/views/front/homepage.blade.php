@@ -28,8 +28,8 @@
             <h2>Fikirlerinizi önemsiyoruz ve bir an önce hayata geçirmeniz için gerekli tüm profesyonel desteği
                 sağlıyoruz</h2>
 
-            <button id="button_hp1">HAKKIMIZDA</button>
-            <button id="button_hp2">PROJE BAŞLAT</button>
+            <button id="button_hp1" onclick="window.location='{{ route('about.us') }}'">HAKKIMIZDA</button>
+            <button id="button_hp2" onclick="window.location='{{ route('start.project') }}'">HAKKIMIZDA</button>
         </div>
 
         <div id="homepage_2">
@@ -45,43 +45,43 @@
         </div>
 
         <h4>Neler Yapıyoruz? </h4>
-            <div class="homepage_3">
-                <div class="services">
-                    <div class="services_inside">
-                        <div class="icon-container">
-                            <img src="/images/yazilim.svg" alt="Yazılım İkon">
-                        </div>
-                        <h4>YAZILIM ATÖLYESİ</h4>
-                            <h2>işi ve kurumlara özel yazılımlar, sektörel otomasyon çözümleri, B2B,</h2>
+        <div class="homepage_3">
+            <div class="services">
+                <div class="services_inside">
+                    <div class="icon-container">
+                        <img src="/images/yazilim.svg" alt="Yazılım İkon">
                     </div>
+                    <h4>YAZILIM ATÖLYESİ</h4>
+                    <h2>işi ve kurumlara özel yazılımlar, sektörel otomasyon çözümleri, B2B,</h2>
+                </div>
 
-                    <div class="services_inside">
-                        <div class="icon-container">
-                            <img src="/images/tasarim.svg">
-                        </div>
-                        <h4>TASARIM ATÖLYESİ</h1>
-                            <h2>Profesyonel ekibimizle; mimari, iç mimari, endüstriyel ürün, kurumsal kimlik,</h2>
+                <div class="services_inside">
+                    <div class="icon-container">
+                        <img src="/images/tasarim.svg">
                     </div>
+                    <h4>TASARIM ATÖLYESİ</h1>
+                        <h2>Profesyonel ekibimizle; mimari, iç mimari, endüstriyel ürün, kurumsal kimlik,</h2>
+                </div>
 
-                    <div class="services_inside">
-                        <div class="icon-container">
-                            <img src="/images/robotik.svg">
-                        </div>
-                        <h4>ELEKTRONİK ATÖLYESİ</h1>
-                            <h2>Endüstri 4.0 ve nesnelerin interneti alanlarında ar-ge projeleri yürütüyor,</h2>
+                <div class="services_inside">
+                    <div class="icon-container">
+                        <img src="/images/robotik.svg">
                     </div>
+                    <h4>ELEKTRONİK ATÖLYESİ</h1>
+                        <h2>Endüstri 4.0 ve nesnelerin interneti alanlarında ar-ge projeleri yürütüyor,</h2>
+                </div>
 
-                    <div class="services_inside">
-                        <div class="icon-container">
-                            <img src="/images/idea.svg">
-                        </div>
-                        <h4>FİKİR ATÖLYESİ</h1>
-                            <h2>Proje ve girişimcilik fikirlerinizi uzman ekibimizle birlikte geliştirerek hayata
-                                geçirmeniz
-                                için</h2>
+                <div class="services_inside">
+                    <div class="icon-container">
+                        <img src="/images/idea.svg">
                     </div>
+                    <h4>FİKİR ATÖLYESİ</h1>
+                        <h2>Proje ve girişimcilik fikirlerinizi uzman ekibimizle birlikte geliştirerek hayata
+                            geçirmeniz
+                            için</h2>
                 </div>
             </div>
+        </div>
     </div>
 
     <!-- FOOTER -->

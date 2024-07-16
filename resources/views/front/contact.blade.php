@@ -28,7 +28,8 @@
                         sağlıyoruz.</h2>
                 </div>
                 <div class="">
-                    <form action="#" method="POST">
+                    <form action="{{route('registration.post')}}" method="POST">
+                        @csrf
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
