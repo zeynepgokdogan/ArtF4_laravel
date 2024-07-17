@@ -33,26 +33,25 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="first-name">Adınız-Soyadınız</label>
-                                    <input type="text" id="first-name" name="first-name" required autocomplete="name">
+                                    <label for="name-surname">Adınız-Soyadınız</label>
+                                    <input type="text" id="first-name" name="name-surname" required autocomplete="name">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="phone">Telefon Numaranız</label>
-                                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                        required>
+                                    <input type="tel" id="phone" name="phone">
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="email">E-posta Adresiniz</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email">
                         </div>
                         <div class="form-group">
                             <label for="message">Mesajınız</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="5"></textarea>
                         </div>
                         <div class="form-group">
                             <button type="submit">Gönder</button>

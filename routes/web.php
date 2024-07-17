@@ -18,7 +18,7 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 // Registration routes
 Route::get('/registration', [FormController::class, 'showRegistrationForm']);
 Route::post('/registration/post', [FormController::class, 'handleRegistration'])->name('registration.post');
-
+ 
 //buttons in hoemepage
 Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('about.us');
 Route::get('/start-project', [HomeController::class, 'startProject'])->name('start.project');

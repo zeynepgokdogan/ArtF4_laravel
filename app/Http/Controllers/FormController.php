@@ -13,12 +13,14 @@ class FormController extends Controller
 
     public function handleRegistration(Request $request)
     {
-        // Form verilerini işle
-        $name = $request->input('name');
-        $email = $request->input('email');
 
-        // Verileri başka bir işlem için kullanabilir veya veritabanına kaydedebilirsiniz
+        $request->validate([
+             "name-surname"=> "required|min: 5",
+             "phone"=> "required",
+             "mail"=> "required|email "
 
-        return redirect()->route('homepage')->with('success', 'Registration successful');
+        ]);
+
+       echo "succes";
     }
 }
