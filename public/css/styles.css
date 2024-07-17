@@ -808,9 +808,16 @@ footer {
 .contact_1_inside {
     display: flex;
     flex-direction: row;
+    justify-content: space-between; 
     box-sizing: border-box;
     padding: 20px;
     background-color: white;
+}
+
+.contact_1_inside > div {
+    flex: 1; /* Her iki div'i eşit boyutta yapmak için */
+    margin-right: 10px; /* İstenilen boşluğu ayarlayabilirsiniz */
+    padding: 10px; /* İçerik içindeki boşluklar */
 }
 
 .form-container {

@@ -27,7 +27,7 @@
                     <h2>Fikirlerinizi önemsiyoruz ve bir an önce hayata geçirmeniz için gerekli tüm profesyonel desteği
                         sağlıyoruz.</h2>
                 </div>
-                <div class="">
+                <div>
                     <form action="{{route('registration.post')}}" method="POST">
                         @csrf
                         <div class="row">
