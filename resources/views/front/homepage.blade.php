@@ -29,7 +29,7 @@
                 sağlıyoruz</h2>
 
             <button id="button_hp1" onclick="window.location='{{ route('about.us') }}'">HAKKIMIZDA</button>
-            <button id="button_hp2" onclick="window.location='{{ route('start.project') }}'">HAKKIMIZDA</button>
+            <button id="button_hp2" onclick="window.location='{{ route('start.project') }}'">PROJE BAŞLAT</button>
         </div>
 
         <div id="homepage_2">
