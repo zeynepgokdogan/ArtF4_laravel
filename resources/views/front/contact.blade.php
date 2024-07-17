@@ -34,7 +34,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name-surname">Adınız-Soyadınız</label>
-                                    <input type="text" id="first-name" name="name-surname" required autocomplete="name">
+                                    <input type="text" id="name" name="name" required autocomplete="name">
                                 </div>
                             </div>
                             <div class="col-md-6">

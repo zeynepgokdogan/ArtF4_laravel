@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Form;
 use Illuminate\Http\Request;
 
 class FormController extends Controller
@@ -13,14 +14,18 @@ class FormController extends Controller
 
     public function handleRegistration(Request $request)
     {
-
         $request->validate([
-             "name-surname"=> "required|min: 5",
-             "phone"=> "required",
-             "mail"=> "required|email "
-
+            'name' => 'required|min:5',
+            'phone' => 'required',
+            'email' => 'required|email',
         ]);
 
-       echo "succes";
+        $form = new Form();
+        $form->name = $request->input('name');
+        $form->phone = $request->input('phone');
+        $form->email = $request->input('email');
+        $form->save();
+
+        return "Success! Data saved.";
     }
 }
