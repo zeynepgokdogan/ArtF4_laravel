@@ -58,6 +58,9 @@ h5 {
     align-items: center;
     background-color: white;
     padding: 10px 20px;
+    position: relative; /* Navbar'ın pozisyonu relative olarak ayarlandı */
+    z-index: 1000; /* Yüksek bir z-index değeri */
+    height: 40px;
 }
 
 .navbar-logo img {
@@ -71,6 +74,10 @@ h5 {
     flex-direction: column;
     cursor: pointer;
     align-items: center;
+    position: absolute; /* Değişiklik burada */
+    top: 10px; /* İstediğiniz yüksekliğe ayarlayabilirsiniz */
+    right: 20px; /* Sağ tarafta olmasını sağlar */
+    z-index: 1001; /* Menü açma butonu için daha yüksek bir z-index değeri */
 }
 
 .bar {
@@ -89,6 +96,7 @@ h5 {
 .navbar-links li {
     float: right;
     line-height: 50px;
+    text-align: center;
 }
 
 .navbar-links li a {
@@ -108,33 +116,33 @@ h5 {
     color: #e4344c;
 }
 
-/*mobil uyumluluk için*/
-
+/* Mobil Uyumluluk */
 @media screen and (max-width: 768px) {
-    .navbar-toggle {
-        display: flex;
-        align-self: flex-end;
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        height: 40px;
     }
 
-    .navbar {
+    .navbar-logo {
+        margin-bottom: 20px;
+    }
+
+    .navbar-toggle {
         display: flex;
     }
 
     .navbar-links {
         display: none;
+        position: fixed;
         flex-direction: column;
         width: 100%;
-        position: absolute;
         background-color: #e4344c;
         top: 60px;
         left: 0;
         text-align: center;
-        font-family: "Montserrat", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        color: rgb(230, 49, 77);
-        font-size: 16px;
-        line-height: 20px;
+        z-index: 999; /* Menü için yüksek bir z-index değeri */
     }
 
     .navbar-links.active {
@@ -148,7 +156,6 @@ h5 {
     .navbar-links li a {
         display: block;
         color: white;
-        text-align: center;
         padding: 20px 16px;
         text-decoration: none;
     }
@@ -162,6 +169,7 @@ h5 {
         max-height: auto;
     }
 }
+
 
 /* FOOTER */
 footer {
