@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Form;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class FormController extends Controller
 {
@@ -27,5 +28,33 @@ class FormController extends Controller
         $form->save();
 
         return "Success! Data saved.";
+    }
+
+    public function add()
+    {
+        DB::table("form")->insert([
+            "name" => "Seher Nur Şahin",
+            "phone" => "08549861889",
+            "email" => "seher@gmail.com"
+        ]);
+    }
+
+    public function delete()
+    {
+        DB::table('form')->where("id", 8)->delete();
+        DB::table('form')->where("id", 9)->delete();
+    }
+
+    public function update()
+    {
+        DB::table('form')->where("id", 2)->update([
+            "name" => "Halil Erdem",
+        ]);
+    }
+
+    public function listOfDatabase()
+    {
+        $data = DB::table('form')->get();
+        return $data;
     }
 }

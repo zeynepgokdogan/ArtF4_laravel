@@ -9,7 +9,7 @@ class Form extends Model
 {
     use HasFactory;
 
-    protected $table = 'form'; // Tablo adı
+    protected $table = 'form';
 
     protected $fillable = [
         'name',

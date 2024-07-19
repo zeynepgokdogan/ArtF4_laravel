@@ -22,3 +22,9 @@ Route::post('/registration/post', [FormController::class, 'handleRegistration'])
 //buttons in hoemepage
 Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('about.us');
 Route::get('/start-project', [HomeController::class, 'startProject'])->name('start.project');
+
+//use db library
+Route:: get('/form-addPerson', [FormController::class, 'add']);
+Route:: get('/form-deletePerson', [FormController::class, 'delete']);
+Route:: get('/form-updatePerson', [FormController::class, 'update']);
+Route:: get('/form-listOfPeople', [FormController::class, 'ListOfDatabase']);
