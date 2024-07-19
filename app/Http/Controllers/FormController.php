@@ -30,6 +30,8 @@ class FormController extends Controller
         return "Success! Data saved.";
     }
 
+    //use model for database operations
+
     public function add()
     {
         DB::table("form")->insert([
@@ -56,5 +58,47 @@ class FormController extends Controller
     {
         $data = DB::table('form')->get();
         return $data;
+    }
+
+    //use model for database operations
+
+    public function add_useModel()
+    {
+        form::create([
+            "name" => "Nevra Alcalı",
+            "phone" => "08549861889",
+            "email" => "nevra@gmail.com"
+        ]);
+        form::create([
+            "name" => "Nevra Alcalı",
+            "phone" => "08549861889",
+            "email" => "nevra@gmail.com"
+        ]);
+        form::create([
+            "name" => "Nevra Alcalı",
+            "phone" => "08549861889",
+            "email" => "nevra@gmail.com"
+        ]);
+    }
+
+    public function delete_useModel()
+    {
+        form::whereId(16)->delete();
+    }
+
+
+    public function update_useModel()
+    {
+        form::whereId(15)->update([
+            "name" => "Seden Alcalı",
+            "phone" => "08549861889",
+            "email" => "Seden@gmail.com"
+        ]);
+    }
+
+    public function find_useModel()
+    {
+        $persondata = form::find(1);
+        return $persondata;
     }
 }

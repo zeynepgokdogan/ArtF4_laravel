@@ -23,8 +23,15 @@ Route::post('/registration/post', [FormController::class, 'handleRegistration'])
 Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('about.us');
 Route::get('/start-project', [HomeController::class, 'startProject'])->name('start.project');
 
-//use db library
-Route:: get('/form-addPerson', [FormController::class, 'add']);
-Route:: get('/form-deletePerson', [FormController::class, 'delete']);
-Route:: get('/form-updatePerson', [FormController::class, 'update']);
+//use db library for database operations
+Route:: get('/form-add', [FormController::class, 'add']);
+Route:: get('/form-delete', [FormController::class, 'delete']);
+Route:: get('/form-update', [FormController::class, 'update']);
 Route:: get('/form-listOfPeople', [FormController::class, 'ListOfDatabase']);
+
+//use model for database operations
+Route:: get('/form-addModel', [FormController::class, 'add_useModel']);
+Route:: get('/form-deleteModel', [FormController::class, 'delete_useModel']);
+Route:: get('/form-updateModel', [FormController::class, 'update_useModel']);
+Route:: get('/form-find', [FormController::class, 'find_useModel']);
+
